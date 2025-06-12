@@ -231,28 +231,28 @@ function App() {
         <Display>{diplayString}</Display>
         <Control>
           {/* тут обычным for'ом или чем-то подобным не обойтись, так что всё захардкожено */}
-          <Bnt onClick={clear}>AC</Bnt>
-          <Bnt onClick={deleteLastChar}>
+          <Bnt style={{background:"grey"}} onClick={clear}>AC</Bnt>
+          <Bnt style={{background:"grey"}} onClick={deleteLastChar}>
             <img style={{ filter: iconFilter }} src={backspace} alt="<-" />
           </Bnt>
-          <Bnt onClick={() => addOperator("%")}>mod</Bnt>
-          <Bnt onClick={() => addOperator("/")}>/</Bnt>
+          <Bnt style={{background:"grey"}} onClick={() => addOperator("%")}>mod</Bnt>
+          <Bnt style={{background:"grey"}} onClick={() => addOperator("/")}>/</Bnt>
           <Bnt onClick={() => addToValue("7")}>7</Bnt>
           <Bnt onClick={() => addToValue("8")}>8</Bnt>
           <Bnt onClick={() => addToValue("9")}>9</Bnt>
-          <Bnt onClick={() => addOperator("*")}>X</Bnt>
+          <Bnt style={{background:"grey"}} onClick={() => addOperator("*")}>X</Bnt>
           <Bnt onClick={() => addToValue("4")}>4</Bnt>
           <Bnt onClick={() => addToValue("5")}>5</Bnt>
           <Bnt onClick={() => addToValue("6")}>6</Bnt>
-          <Bnt onClick={() => addOperator("-")}>-</Bnt>
+          <Bnt style={{background:"grey"}} onClick={() => addOperator("-")}>-</Bnt>
           <Bnt onClick={() => addToValue("1")}>1</Bnt>
           <Bnt onClick={() => addToValue("2")}>2</Bnt>
           <Bnt onClick={() => addToValue("3")}>3</Bnt>
-          <Bnt onClick={() => addOperator("+")}>+</Bnt>
+          <Bnt style={{background:"grey"}} onClick={() => addOperator("+")}>+</Bnt>
           <Bnt onClick={negateValue}>+/-</Bnt>
-          <Bnt onClick={() => addToValue("0")}>0</Bnt>
+          <Bnt  onClick={() => addToValue("0")}>0</Bnt>
           <Bnt onClick={addDot}>,</Bnt>
-          <Bnt onClick={handleSolve}>=</Bnt>
+          <Bnt style={{background:"orange"}} onClick={handleSolve}>=</Bnt>
         </Control>
       </Container>
     </ThemeProvider>
